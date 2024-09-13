@@ -883,7 +883,6 @@ section,
   background-position: center top; /* Centra l'immagine */
   background-attachment: scroll; /* Fissa l'immagine rispetto al contenuto */
   width: 100%; /* Mantiene la larghezza dello slide al 100% del contenitore slider */
-  background-image: url('../assets/img/background.png');
   max-width:1200px;
 }
 @media (max-width: 1200px) {
