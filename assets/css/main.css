@@ -1309,6 +1309,39 @@ section,
 .blog-details .post-img {
   margin: -30px -30px 20px -30px;
   overflow: hidden;
+  max-width: 100%; /* Limita l'immagine a non superare la larghezza del contenitore */
+  max-height: 500px; /* Opzionale: Limita l'altezza massima */
+  min-height: 500px; /* Opzionale: Limita l'altezza massima */
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  
+}
+
+.blog-details .post-img img {
+  width: 100%; /* Assicura che l'immagine riempia il contenitore senza sforare */
+  height: auto; /* Mantiene le proporzioni */
+  object-fit: cover; /* (opzionale) Taglia l'immagine se necessario per adattarsi al contenitore */
+}
+
+.blog-details .article .post-img {
+  margin: -30px -30px 20px -30px;
+  overflow: hidden;
+  max-width: 100%; /* Limita l'immagine a non superare la larghezza del contenitore */
+  max-height: 500px; /* Opzionale: Limita l'altezza massima */
+  min-height: 500px; /* Opzionale: Limita l'altezza massima */
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  
+}
+
+.blog-details .article .post-img img {
+  width: 100%; /* Assicura che l'immagine riempia il contenitore senza sforare */
+  height: auto; /* Mantiene le proporzioni */
+  object-fit: cover; /* (opzionale) Taglia l'immagine se necessario per adattarsi al contenitore */
 }
 
 
