@@ -1309,19 +1309,8 @@ section,
 .blog-details .post-img {
   margin: -30px -30px 20px -30px;
   overflow: hidden;
-  max-width: 100%; /* Limita l'immagine a non superare la larghezza del contenitore */
-  max-height: 500px; /* Opzionale: Limita l'altezza massima */
-  min-height: 500px; /* Opzionale: Limita l'altezza massima */
-  margin: 10 auto;
-  border: 3px solid #F6DE3B;
-  
 }
 
-.blog-details .post-img img {
-  width: 100%; /* Assicura che l'immagine riempia il contenitore senza sforare */
-  height: auto; /* Mantiene le proporzioni */
-  object-fit: cover; /* (opzionale) Taglia l'immagine se necessario per adattarsi al contenitore */
-}
 
 .blog-details .title {
   color: var(--heading-color);
@@ -1525,18 +1514,6 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
-}
-
-.blog-posts .article img{
-  background-color: var(--surface-color);
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  overflow: hidden;
-  max-width: 100%; /* Limita l'immagine a non superare la larghezza del contenitore */
-  max-height: 500px; /* Opzionale: Limita l'altezza massima */
-  min-height: 500px; /* Opzionale: Limita l'altezza massima */
-  margin: auto;
-  border: 3px solid #F6DE3B;
 }
 
 .blog-posts .post-img img {
