@@ -1803,6 +1803,13 @@ section,
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff; /* Colore di sfondo bianco per il modulo */
+    border-radius: 8px; /* Angoli arrotondati */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Definiamo uno stile più moderno per gli input */
@@ -1813,6 +1820,13 @@ section,
     font-size: 1rem;
     background-color: #f9f9f9;
     transition: border 0.3s;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
 }
 
 /* Cambiamo il bordo quando l'utente interagisce con i campi */
@@ -1835,6 +1849,14 @@ section,
     padding: 0.8rem;
     border-radius: 8px;
     font-size: 1.1rem;
+    cursor: pointer;
+     width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
