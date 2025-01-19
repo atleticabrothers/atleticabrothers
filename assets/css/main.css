@@ -1762,6 +1762,8 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
+
 .contact .info-item+.info-item {
   margin-top: 40px;
 }
@@ -1794,6 +1796,71 @@ section,
   
 }
 
+
+/* Aggiungiamo un po' di spazio e margine tra gli elementi */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Definiamo uno stile più moderno per gli input */
+#contact input, #contact textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border 0.3s;
+}
+
+/* Cambiamo il bordo quando l'utente interagisce con i campi */
+#contact input:focus, #contact textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Aggiungiamo un po' di padding ai titoli */
+#contact h3 {
+    margin-bottom: 1rem;
+}
+
+/* Pulsante invia migliorato */
+#contact input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Limitiamo la larghezza del form per migliorare la disposizione */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Aggiungiamo un po' di spaziatura ai paragrafi */
+#contact p {
+    margin: 0.5rem 0;
+}
+
+/* Estetica generale della sezione */
+.contact section {
+    background-color: #f0f4f7;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
 
 
