@@ -401,11 +401,29 @@
 	<script src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript">var submitted=false;</script>
 	<script type="text/javascript">
-		$('#gform').on('submit', function(e) {
-			$('#gform *').fadeOut(2000);
-			$('#gform').prepend('Ti contatteremo a breve');
-		});
-	</script>
+    $('#gform').on('submit', function(e) {
+      e.preventDefault(); // Impedisce l'invio del modulo tradizionale
+
+      // Ottieni i dati del modulo
+      var formData = $(this).serialize();
+
+      // Invia i dati a Google Forms utilizzando AJAX
+      $.ajax({
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLScucK0IEPxAHFQKrBJiXWi5CYXyJml2v44MpuTUtV26Fa4z7g/formResponse', 
+        type: 'POST',
+        data: formData,
+        success: function(response) {
+          // Quando la risposta arriva, nascondi il modulo e mostra il messaggio
+          $('#gform').fadeOut(2000);
+          $('#message').text('Ti contatteremo a breve').fadeIn(2000);
+        },
+        error: function(xhr, status, error) {
+          // Gestisci gli errori se ci sono problemi nell'invio
+          $('#message').text('C\'è stato un errore. Riprova.').fadeIn(2000);
+        }
+      });
+    });
+  </script>
 
 </body>
 
