@@ -1321,10 +1321,19 @@ section,
 }
 
 .blog-details .post-img {
-    height: auto; /* Mantiene il rapporto d'aspetto dell'immagine */
-    border: 3px solid #F6DE3B; /* Aggiunge un bordo giallo di 3px */
-    margin-bottom: 20px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Distanza del contenitore */
 }
+
+.blog-details .post-img img {
+    border: 3px solid #F6DE3B; /* Aggiunge il bordo all'immagine */
+    width: 100%; /* Fa sì che l'immagine si adatti */
+    height: auto; /* Mantiene il rapporto d'aspetto */
+    object-fit: cover; /* Fa sì che l'immagine copra il contenitore, se necessario */
+}
+
 
 
 .blog-details .title {
