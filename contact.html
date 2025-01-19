@@ -223,7 +223,7 @@
 											<h3>Oppure lasciaci un messaggio</h3>
 											<form name="gform" id="gform"
 												action="https://docs.google.com/forms/d/e/1FAIpQLScucK0IEPxAHFQKrBJiXWi5CYXyJml2v44MpuTUtV26Fa4z7g/formResponse?"
-												>
+												target="hidden_iframe" onsubmit="submitted=true;">
 												<label for="entry2005620554">Campo 1:</label> <input
 													type="text" name="entry.2005620554" id="entry2005620554"
 													placeholder="Inserisci il valore"><br> <label
@@ -234,8 +234,7 @@
 											</form>
 
 											<!-- iFrame nascosto per prevenire il reindirizzamento -->
-<!-- 											<iframe name="hidden_iframe" style="display: none;"></iframe>
- -->
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 										</div>
 									</div>
 									<!-- End Info Item -->
