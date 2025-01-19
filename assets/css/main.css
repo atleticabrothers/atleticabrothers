@@ -1307,8 +1307,9 @@ section,
 }
 
 .blog-details .post-img {
-  margin: -30px -30px 20px -30px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -1518,6 +1519,8 @@ section,
 
 .blog-posts .post-img img {
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
 }
 
 .blog-posts .post-date {
