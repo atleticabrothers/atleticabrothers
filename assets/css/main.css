@@ -1322,7 +1322,6 @@ section,
 
 .blog-details .post-img {
   overflow: hidden;
-  display: flex;
   justify-content: center;
     height: auto; /* Mantiene il rapporto d'aspetto dell'immagine */
     border: 3px solid #F6DE3B; /* Aggiunge un bordo giallo di 3px */
