@@ -1806,7 +1806,7 @@ section,
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 20px 0;
     background-color: #fff; /* Colore di sfondo bianco per il modulo */
     border-radius: 8px; /* Angoli arrotondati */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
