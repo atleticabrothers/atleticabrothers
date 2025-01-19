@@ -1310,6 +1310,10 @@ section,
   overflow: hidden;
   display: flex;
   justify-content: center;
+   width: 100%; /* L'immagine si adatta alla larghezza della colonna */
+    height: auto; /* Mantiene il rapporto d'aspetto dell'immagine */
+    border: 3px solid yellow; /* Aggiunge un bordo giallo di 3px */
+    box-sizing: border-box; /* Assicura che il bordo sia incluso nella dimensione totale */
 }
 
 
