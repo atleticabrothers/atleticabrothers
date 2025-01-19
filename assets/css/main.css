@@ -1316,7 +1316,8 @@ section,
     height: auto; /* Mantiene il rapporto d'aspetto dell'immagine */
     border: 3px solid #F6DE3B; /* Aggiunge un bordo giallo di 3px */
     box-sizing: border-box; /* Assicura che il bordo sia incluso nella dimensione totale */
-    margin-bottom: 20px;     
+    margin-bottom: 20px;  
+    padding: 0;   
 }
 
 .blog-details .post-img {
