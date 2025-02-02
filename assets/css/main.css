@@ -1476,7 +1476,6 @@ section,
 .video-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
   display: flex;
   justify-content: center;
   align-items: center;
